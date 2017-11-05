@@ -14,11 +14,18 @@ namespace DutchTreat.Controllers
             return View();
         }
 
-        public IActionResult Contact ()
+        [HttpGet ("contact")]
+        public IActionResult Contact()
         {
-            ViewBag.Title = "Contact Us";
+           
             return View();
-        } 
+        }
+        [HttpPost ("contact")]
+        public IActionResult Contact(ViewModels.ContactViewModel model)
+        {
+            
+            return View();
+        }
 
         public IActionResult About ()
         {
